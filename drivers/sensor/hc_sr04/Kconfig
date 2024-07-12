@@ -1,0 +1,10 @@
+# Copyright (c) 2021 Nordic Semiconductor ASA
+# SPDX-License-Identifier: Apache-2.0
+
+config HC_SR04
+	bool "HC-SR04 Ultrasonic Ranging Module"
+	default n
+	depends on DT_HAS_ZEPHYR_HC_SR04_ENABLED
+	select GPIO
+	help
+	  Enable HC-SR04 ultrasonic distance sensor.

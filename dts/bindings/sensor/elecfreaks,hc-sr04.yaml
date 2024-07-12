@@ -1,0 +1,24 @@
+# Copyright (c) 2024 Pierre COURBIN
+# Based on https://github.com/inductivekickback/hc-sr04, Copyright (c) 2020 Daniel Veilleux
+
+description: HC-SR04 Ultrasonic Ranging Module
+
+compatible: "elecfreaks,hc-sr04"
+
+include: base.yaml
+
+properties:
+  status:
+    required: true
+    type: string
+    description: Human readable string describing the device's status
+
+  trig-gpios:
+    type: phandle-array
+    description: Trigger pin
+    required: true
+
+  echo-gpios:
+    type: phandle-array
+    description: Echo pin
+    required: true
