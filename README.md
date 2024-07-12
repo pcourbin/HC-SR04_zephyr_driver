@@ -37,14 +37,14 @@ Define HC_SR04 in your board `.overlay` like this example with two sensors:
 ```dts
 / {
     us0: hc-sr04_0 {
-        compatible = "elecfreaks,hc-sr04";
+        compatible = "zephyr,hc-sr04";
         trig-gpios = <&gpiog 5 GPIO_ACTIVE_HIGH>;
         echo-gpios = <&gpiog 4 GPIO_ACTIVE_HIGH>;
         status = "okay";
     };
 
     us1: hc-sr04_1 {
-        compatible = "elecfreaks,hc-sr04";
+        compatible = "zephyr,hc-sr04";
         trig-gpios = <&gpiog 2 GPIO_ACTIVE_HIGH>;
         echo-gpios = <&gpiog 3 GPIO_ACTIVE_HIGH>;
         status = "okay";

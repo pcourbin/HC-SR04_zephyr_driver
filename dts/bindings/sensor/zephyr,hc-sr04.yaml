@@ -3,7 +3,7 @@
 
 description: HC-SR04 Ultrasonic Ranging Module
 
-compatible: "elecfreaks,hc-sr04"
+compatible: "zephyr,hc-sr04"
 
 include: base.yaml
 

@@ -9,7 +9,7 @@
  *       working rate.
  */
 
-#define DT_DRV_COMPAT elecfreaks_hc_sr04
+#define DT_DRV_COMPAT zephyr_hc_sr04
 
 #include "hc_sr04.h"
 
@@ -216,7 +216,7 @@ static const struct sensor_driver_api hc_sr04_api = {
     .channel_get = hc_sr04_channel_get,
 };
 
-#define INST(num) DT_INST(num, elecfreaks_hc_sr04)
+#define INST(num) DT_INST(num, zephyr_hc_sr04)
 
 #define HC_SR04_DEVICE(n)                                                                          \
     static const struct hc_sr04_config hc_sr04_config_##n = {                                      \
