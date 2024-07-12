@@ -19,6 +19,13 @@ set(ZEPHYR_EXTRA_MODULES "${CMAKE_SOURCE_DIR}/modules/HC_SR04")
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 ```
 
+To replace steps 1 and 2, e.g. to use in a `Platformio`project, you can create a `.gitmodules` file with:
+```ini
+[submodule "HC-SR04-Driver"]
+	path = zephyr/modules/HC_SR04
+	url = https://github.com/pcourbin/HC-SR04_zephyr_driver
+```
+
 ### Driver configuration
 Enable sensor driver subsystem and HC_SR04 driver by adding these entries to your `prj.conf`:
 ```ini
